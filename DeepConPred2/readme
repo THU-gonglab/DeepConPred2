@@ -1,0 +1,25 @@
+####
+#INTRODUCTION
+DeepConPred2 is a program that predicts contact map of a target protein sequence. It has 3 modules (file folders 'C', 'R' and 'New_Third' in folder 'f_model') for different steps of contact prediction and works well on proteins no matter with or without many sequence homologs. DeepConPred2 could be ranked as one of the state-of-the-art methods in contact prediction according to our tests on different testing sets including CASP11 and CASP12. See the paper for technical details.
+ 
+####
+#REQUIREMENT
+(1) gcc and g++ compilers;
+(2) python with tensorflow(version 1.6.0) );
+
+####
+#HOW TO USE
+1.Fasta file should be prepared for target protein in the file folder 'data', like file 'T0982' in file fold 'data_example'. Notice that the name of this fasta file must be the name of the target protein.
+2.Results of psiblast, ccmpred and Spider3 should be prepared for target protein in the file folder 'data', like files 'T0982.PSSM', 'T0982.ccmpred' and 'T0982.spd33' in file fold 'data_example'.
+3.Excute the python script 'DeepConPred2.py' with the name of the target protein. For example, for 'T0982' in file fold 'data_example', 
+excute command line 'python DeepConPred2.py T0982'.
+4.The final result is a matrix file with suffix '.contactP' and should be found in the file folder 'result', like file 'T0982.contactP' in file fold 'result_example'.
+
+####
+#CONTACT
+This software package will be further updated for better performance and more convenient usage.
+If you have any questiones, please contact Haipeng Gong(hgong@tsinghua.edu.cn).
+
+Thanks!
+
+Aug 28, 2018

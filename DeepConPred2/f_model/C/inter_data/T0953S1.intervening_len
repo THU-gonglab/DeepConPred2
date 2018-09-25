@@ -1,0 +1,9 @@
+Strand1 Strand2 1 0 0 0 0 0 0 0 
+Strand1 Strand3 0 0 1 0 0 0 0 0 
+Strand1 Strand4 0 0 0 0 1 0 0 0 
+Strand1 Strand5 0 0 0 0 0 0 1 0 
+Strand2 Strand3 1 0 0 0 0 0 0 0 
+Strand2 Strand4 0 0 1 0 0 0 0 0 
+Strand2 Strand5 0 0 0 0 0 1 0 0 
+Strand3 Strand5 0 0 0 0 1 0 0 0 
+Strand4 Strand5 0 0 1 0 0 0 0 0 

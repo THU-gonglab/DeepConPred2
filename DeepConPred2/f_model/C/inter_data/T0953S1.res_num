@@ -1,0 +1,9 @@
+Strand1 Strand2 0 5 6 5 6 5 
+Strand1 Strand3 0 5 6 6 5 5 
+Strand1 Strand4 0 5 6 5 5 8 
+Strand1 Strand5 0 5 6 5 8 0 
+Strand2 Strand3 5 6 5 6 5 5 
+Strand2 Strand4 5 6 5 5 5 8 
+Strand2 Strand5 5 6 5 5 8 0 
+Strand3 Strand5 6 5 5 5 8 0 
+Strand4 Strand5 5 5 8 5 8 0 
