@@ -243,6 +243,8 @@ if __name__=='__main__':
 	os.system('python extract_features.py '+pro_name)
 	os.chdir('../../../')
 	deepccon=DeepCCon('./f_model/C/model/')
+	if not os.path.exists('./f_model/C/results'):
+		os.mkdir('./f_model/C/results')
 	deepccon.prediction(pro_name,'./f_model/C/features/','./f_model/C/results/')
 
 
@@ -255,6 +257,13 @@ if __name__=='__main__':
 # os.system('cp inter_process/AA_SSCP_db ./f_model/R/data')
 	os.system('cp ./f_model/C/results/'+pro_name+'.DeepCCon ./f_model/R/data')
 	os.chdir('./f_model/R/feature_extraction/')
+	if not os.path.exists('../features'):
+		os.mkdir('../features')
+	if not os.path.exists('../results'):
+		os.mkdir('../results')
+	for rr_con in ['long','medium','short']:
+		if not os.path.exists('../results/'+rr_con):
+			os.mkdir('../results/'+rr_con)
 	os.system('python extract_features_long.py '+pro_name)
 	os.system('python extract_features_medium.py '+pro_name)
 	os.system('python extract_features_short.py '+pro_name)
@@ -272,6 +281,8 @@ if __name__=='__main__':
 	os.chdir('../')
 	new_third=new_Third('./f_model/New_Third/model/')
 	test_data=new_third.data_process(pro_name,'./f_model/New_Third/data/')
+	if not os.path.exists('./f_model/New_Third/results'):
+		os.mkdir('./f_model/New_Third/results')
 	new_third.prediction(pro_name,'./f_model/New_Third/results/',test_data)
 	os.system('cp f_model/New_Third/results/'+pro_name+'.contactP ./result/' )
 
